@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.share.AddProductActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/litegray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="ProductName"
+                android:id="@+id/product_name"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="ProductPrice"
+                android:id="@+id/product_price"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:id="@+id/product_category"
+                android:paddingLeft="12dp"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:gravity="start"
+                android:layout_marginTop="20dp"
+                android:hint="ProductDescription"
+                android:id="@+id/product_description"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/product_image"
+                android:background="@drawable/ic_menu_camera"/>
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="AddProduct"
+                android:layout_marginTop="20dp"
+                android:id="@+id/add_product"
+                android:layout_marginBottom="12dp"/>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button_upload"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

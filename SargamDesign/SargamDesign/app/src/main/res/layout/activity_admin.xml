@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.share.AdminActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/admin_wall"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp">
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/ic_add_shopping_cart_black_24dp"
+                    android:onClick="select_category"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ADD PRODUCT"
+                    android:layout_gravity="center_horizontal"/>
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/ic_feedback_black_24dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="FEEDBACK"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp">
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/ic_add_alert_black_24dp"
+                    android:onClick="selectNotificaton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ORDER NOTIFICATION"
+                    android:layout_gravity="center_horizontal"/>
+
+                <ImageButton
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/ic_library_books_black_24dp"
+                    android:onClick="selectNotificaton"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="PRODUCT DETAILS"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

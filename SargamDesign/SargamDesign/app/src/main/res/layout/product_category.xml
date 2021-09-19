@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/common_google_signin_btn_text_light"
+        android:layout_marginTop="12dp"
+        android:id="@+id/add_fashion"
+        android:onClick="add_fashion"/>
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Fashion"
+        android:gravity="center_horizontal"
+        android:textSize="16dp" />
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/common_google_signin_btn_text_light"
+        android:layout_marginTop="12dp"
+        android:onClick="add_fashion"/>
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Handicraft"
+        android:gravity="center_horizontal"
+        android:textSize="16dp" />
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/common_google_signin_btn_text_light"
+        android:layout_marginTop="12dp"
+        android:onClick="add_fashion"/>
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Mural Paint"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:paddingBottom="12dp"/>
+
+
+
+</LinearLayout>
